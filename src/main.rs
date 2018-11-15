@@ -19,6 +19,6 @@ fn main() {
     println!("{:?}", docs);
     println!("\n\n{}", docs[0][2]["key"].as_str().unwrap());
 
-    ui::tui::main();
+    ui::tui::main(docs);
 
 }
