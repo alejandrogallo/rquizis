@@ -2,6 +2,7 @@ extern crate clap;
 
 use clap::{Arg, App};
 
+mod ui;
 mod yaml;
 
 fn main() {
@@ -17,5 +18,7 @@ fn main() {
     let docs = yaml::from_file(&input_file);
     println!("{:?}", docs);
     println!("\n\n{}", docs[0][2]["key"].as_str().unwrap());
+
+    ui::tui::main();
 
 }

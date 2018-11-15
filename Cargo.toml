@@ -8,3 +8,5 @@ authors = ["Alejandro Gallo <aamsgallo@gmail.com>"]
 [dependencies]
 yaml-rust = "0.4"
 clap = "2.32"
+termion = "1.5"
+tui = "0.3.0"
