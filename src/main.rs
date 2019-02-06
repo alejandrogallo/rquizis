@@ -16,8 +16,8 @@ fn main() {
 
     let input_file = matches.value_of("file").unwrap().to_string();
     let docs = yaml::from_file(&input_file);
-    println!("{:?}", docs);
-    println!("\n\n{}", docs[0][2]["key"].as_str().unwrap());
+    //println!("{:?}", docs);
+    //println!("\n\n{}", docs[0][2]["key"].as_str().unwrap());
 
     ui::tui::main(docs);
 
